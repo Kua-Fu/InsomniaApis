@@ -1,0 +1,39 @@
+_id: req_903733c7d67b4214a8628a4ad671d2ab
+type: Request
+parentId: fld_aa8699be6b6b4363a8cd2fcb115daae3
+modified: 1607664969095
+created: 1607664672806
+url: http://172.16.0.20:10557/v1/query
+name: "query "
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+     "workspace_uuid": "wksp_e2db2d02837a11eaba9a8671df186910",
+     "queries": [
+      {
+       "conditions": "",
+       "max_duration": "",
+       "max_point": 0,
+       "query": "rum::freeze:(count(`__tags.freeze_type`)) {`__tags.app_id` = 'appid_9648d57a3a8b11eb9b206a08d7d4fe75' and `__tags.env` = 'gray' and `__tags.version` = '1.0'} [1d]",
+       "time_range": []
+      }
+     ],
+     "echo_explain": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_08ee03e111914e40b05ab3ea6588070c
+authentication: {}
+metaSortKey: -1607664672806
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
